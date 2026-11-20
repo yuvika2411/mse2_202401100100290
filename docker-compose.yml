@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    image: web-${ROLL_NO}:v1
+    container_name: web-${ROLL_NO}
+    ports:
+      - "${HOST_PORT}:80"
